@@ -268,6 +268,26 @@
     border-top: 1px dashed var(--line);
   }
 
+  /* ---------- mission ---------- */
+  .mission { padding: 8px 0 44px; }
+  .mission-list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  .mission-item h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .mission-item p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 16px;
+    max-width: 62ch;
+  }
+
   /* ---------- facts strip ---------- */
   .facts {
     padding: 44px 0;
@@ -568,8 +588,25 @@
       </figure>
     </section>
 
+    <section class="mission" aria-labelledby="mission-h">
+      <div class="section-head">
+        <p class="eyebrow">Despre proiect</p>
+        <h2 id="mission-h">Ideea, pe scurt — şi ce ne dorim să facem</h2>
+      </div>
+      <div class="mission-list">
+        <div class="mission-item">
+          <h3>Ideea</h3>
+          <p>Smart Box Toy e un ecosistem de jucării audio pentru copii: o cutie inteligentă şi personaje fizice care, puse pe cutie, spun poveşti, cântă sau predau prin joacă — culori, numere, litere. Fiecare personaj are propria lui lume de poveşti. Copilul nu navighează o aplicaţie: alege o jucărie, o pune pe cutie, iar povestea porneşte singură.</p>
+        </div>
+        <div class="mission-item">
+          <h3>Ce ne dorim să facem</h3>
+          <p>Suntem echipa Hypercode şi lucrăm la conturarea produsului final. Încă n-am decis totul — dacă cutia are ecran, ce formă au personajele, cum se controlează, la ce preţ. De-asta construim acest concept împreună cu părinţii, nu doar în interior: răspunsurile tale ne ajută să decidem direct ce construim mai departe.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="facts">
-      <p class="intro">Ideea de bază: copilul nu alege dintr-o aplicaţie — copilul alege o jucărie, o pune pe cutie, iar povestea începe singură.</p>
+      <p class="intro">Pe scurt, trei repere care nu se negociază:</p>
       <div class="fact-row">
         <div class="fact"><div class="k">Fără ecran</div><div class="v">pentru copil — doar sunet, lumină caldă şi joacă fizică.</div></div>
         <div class="fact"><div class="k">În limba română</div><div class="v">poveşti din folclor, cântece şi rutine gândite local.</div></div>
@@ -748,7 +785,7 @@
 
   <footer>
     <div class="wrap">
-      <p>Smart Box Toy — concept în lucru, construit de echipa Hypercode.</p>
+      <p>Smart Box Toy — concept în lucru, construit de echipa <a href="https://www.hypercode.ro/ro" target="_blank" rel="noopener noreferrer">Hypercode</a>.</p>
     </div>
   </footer>
 </main>
